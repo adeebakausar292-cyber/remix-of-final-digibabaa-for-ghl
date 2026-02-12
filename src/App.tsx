@@ -41,6 +41,8 @@ import BookingCalendar from "./pages/BookingCalendar";
 import AiDiscovery from "./pages/AiDiscovery";
 import AdminAuth from "./pages/AdminAuth";
 import AdminTestimonials from "./pages/AdminTestimonials";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -87,6 +89,8 @@ const App = () => (
           <Route path="/ai-services-in-action" element={<AiServicesInAction />} />
           <Route path="/admin/auth" element={<AdminAuth />} />
           <Route path="/admin/testimonials" element={<AdminTestimonials />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -10,14 +10,32 @@ const Footer = () => {
           <div className="col-span-1 sm:col-span-2 md:col-span-2">
             <div className="mb-4">
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                DigiBabaa
+                DIGIBABAA LLC
               </span>
             </div>
-            <p className="text-muted-foreground mb-6 max-w-md">
+            <p className="text-muted-foreground mb-4 max-w-md">
               Your AI Marketing agency specializing in lead generation, customer engagement, 
               and revenue growth through intelligent chatbots, voice agents, 
               and automated marketing campaigns.
             </p>
+            <div className="text-muted-foreground text-sm space-y-1 mb-4">
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
+                <span>30 N Gould St Ste 47327, Sheridan, WY 82801, United States</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 shrink-0" />
+                <a href="mailto:akbarhayat228@gmail.com" className="hover:text-primary transition-colors">
+                  akbarhayat228@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 shrink-0" />
+                <a href="tel:+13072253509" className="hover:text-primary transition-colors">
+                  +1 307 225 3509
+                </a>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-4">
               <a
                 href="https://www.linkedin.com/in/akbar-fitness-marketing/"
@@ -58,6 +76,7 @@ const Footer = () => {
                 { name: "Pricing", path: "/pricing" },
                 { name: "Portfolio", path: "/portfolio" },
                 { name: "About Us", path: "/about" },
+                { name: "Contact", path: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -77,57 +96,24 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-muted-foreground">
                 <Mail className="h-4 w-4 mt-0.5" />
-                <div>
-                  <span className="block">akbar@digibabaa.com</span>
-                  <span className="block">akbar@digibabaa.co</span>
-                </div>
+                <span>akbarhayat228@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
                 <a 
-                  href="https://wa.link/6u8z8o" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="tel:+13072253509"
                   className="hover:text-primary transition-colors"
                 >
-                  WhatsApp: +971 50 167 0273
-                </a>
-              </li>
-              <li className="flex items-center space-x-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <a 
-                  href="tel:+971562578722"
-                  className="hover:text-primary transition-colors"
-                >
-                  Phone: +971 56 257 8722
+                  +1 307 225 3509
                 </a>
               </li>
               <li className="flex items-start space-x-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-1" />
-                <div className="space-y-2">
-                  <div>
-                    <p className="font-medium text-sm">Dubai Office</p>
-                    <a 
-                      href="https://www.google.com/maps/place/Splendor+Home+Technical+Services+LLC/@25.277637,55.3084101,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f42d8aee6ddc7:0x52cfd4e898b9cf9f!8m2!3d25.277637!4d55.3084101!16s%2Fg%2F11gh2tx2qh?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-primary transition-colors text-sm block"
-                    >
-                      401, Building 44, Al Murar – Deira, Dubai, UAE
-                    </a>
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm">Lahore Office</p>
-                    <a 
-                      href="https://www.google.com/maps/place/31%C2%B027'34.6%22N+74%C2%B017'15.9%22E/@31.459614,74.2851751,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.459614!4d74.28775?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-primary transition-colors text-sm block"
-                    >
-                      Johar Town, Lahore, Pakistan
-                    </a>
-                  </div>
-                </div>
+                <span className="text-sm">
+                  30 N Gould St Ste 47327<br />
+                  Sheridan, WY 82801<br />
+                  United States
+                </span>
               </li>
             </ul>
           </div>
@@ -136,7 +122,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 DigiBabaa. All rights reserved.
+              © {new Date().getFullYear()} DIGIBABAA LLC. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-4 sm:gap-6 mt-4 md:mt-0">
               <Link
