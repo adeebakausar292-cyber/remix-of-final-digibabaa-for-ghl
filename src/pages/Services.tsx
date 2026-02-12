@@ -126,8 +126,8 @@ const Services = () => {
       {
         "@type": "Service",
         "serviceType": "AI Marketing Services",
-        "name": "AI Marketing Services in Dubai",
-        "description": "Comprehensive AI-powered marketing services including chatbots, voice agents, and automation for businesses in Dubai and UAE",
+        "name": "AI Marketing Services",
+        "description": "Comprehensive AI-powered marketing services including chatbots, voice agents, and automation for businesses",
         "provider": {
           "@type": "Organization",
           "name": "DigiBabaa",
@@ -137,8 +137,11 @@ const Services = () => {
           "@type": "Place",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Dubai",
-            "addressCountry": "AE"
+            "streetAddress": "30 N Gould St Ste 47327",
+            "addressLocality": "Sheridan",
+            "addressRegion": "WY",
+            "postalCode": "82801",
+            "addressCountry": "US"
           }
         },
         "hasOfferCatalog": {
@@ -178,9 +181,9 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="AI Marketing Services in Dubai | Chatbots & Automation"
-        description="Comprehensive AI marketing services in Dubai: chatbots for lead generation, voice agents for sales, and custom automation. Transform your Dubai business today."
-        keywords="AI marketing services Dubai, AI chatbots UAE, voice agents Dubai, marketing automation UAE, lead generation Dubai, WhatsApp marketing UAE"
+        title="AI Marketing Services | Chatbots & Automation"
+        description="Comprehensive AI marketing services: chatbots for lead generation, voice agents for sales, and custom automation. Transform your business today."
+        keywords="AI marketing services, AI chatbots, voice agents, marketing automation, lead generation, WhatsApp marketing"
         canonical="https://digibabaa.co/services"
         schema={combinedSchema}
       />
