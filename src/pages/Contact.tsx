@@ -10,6 +10,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { ArrowRight, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,24 +43,35 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          ...formData,
+          smsConsent,
+          marketingConsent,
+        },
+      });
 
-    toast({
-      title: "Message Sent Successfully!",
-      description: "Our team will contact you shortly regarding your inquiry.",
-    });
+      if (error) throw error;
 
-    setFormData({
-      firstName: "",
-      lastName: "",
-      businessName: "",
-      email: "",
-      phone: "",
-    });
-    setSmsConsent(false);
-    setMarketingConsent(false);
-    setIsSubmitting(false);
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Our team will contact you shortly regarding your inquiry.",
+      });
+
+      setFormData({ firstName: "", lastName: "", businessName: "", email: "", phone: "" });
+      setSmsConsent(false);
+      setMarketingConsent(false);
+    } catch (err: any) {
+      console.error("Contact form error:", err);
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again or email us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactSchema = {
