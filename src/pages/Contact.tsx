@@ -32,15 +32,6 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!smsConsent) {
-      toast({
-        title: "SMS Consent Required",
-        description: "You must agree to receive service SMS messages to submit this form.",
-        variant: "destructive",
-      });
-      return;
-    }
-
     setIsSubmitting(true);
 
     try {
@@ -191,22 +182,26 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* SMS Consent - REQUIRED */}
+                {/* SMS Consent Checkboxes – Both OPTIONAL for A2P 10DLC compliance */}
                 <div className="space-y-4 border border-border rounded-lg p-4">
+                  <p className="text-xs text-muted-foreground italic">
+                    Entering a phone number alone does not grant permission to send SMS messages. SMS consent must be collected explicitly using the checkboxes below.
+                  </p>
+
+                  {/* Transactional SMS Consent - OPTIONAL */}
                   <div className="flex items-start space-x-3">
                     <Checkbox
                       id="smsConsent"
                       checked={smsConsent}
                       onCheckedChange={(checked) => setSmsConsent(checked === true)}
                       className="mt-1"
-                      required
                     />
                     <Label htmlFor="smsConsent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
-                      I agree to receive SMS messages from DIGIBABAA LLC regarding website design services, updates, and follow-ups. Message frequency may vary. Message &amp; data rates may apply. Reply STOP to unsubscribe or HELP for help. <span className="text-destructive">*</span>
+                      I agree to receive transactional SMS messages from DIGIBABAA LLC related to account updates, reminders, and service notifications. Message frequency may vary. Message &amp; data rates may apply. Reply STOP to unsubscribe. Reply HELP for support.
                     </Label>
                   </div>
 
-                  {/* Marketing Consent - OPTIONAL */}
+                  {/* Marketing SMS Consent - OPTIONAL */}
                   <div className="flex items-start space-x-3">
                     <Checkbox
                       id="marketingConsent"
@@ -215,7 +210,7 @@ const Contact = () => {
                       className="mt-1"
                     />
                     <Label htmlFor="marketingConsent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
-                      I agree to receive promotional SMS messages from DIGIBABAA LLC about offers and marketing updates. Message frequency may vary. Message &amp; data rates may apply. Reply STOP to unsubscribe or HELP for help.
+                      I agree to receive promotional and marketing SMS messages from DIGIBABAA LLC. Message frequency may vary. Message &amp; data rates may apply. Reply STOP to unsubscribe. Reply HELP for support.
                     </Label>
                   </div>
                 </div>
