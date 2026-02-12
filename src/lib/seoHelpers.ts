@@ -61,22 +61,23 @@ export const generateLocalBusinessSchema = () => {
     "name": "DigiBabaa",
     "description": "AI Marketing agency specializing in chatbots, voice agents, and marketing automation",
     "url": "https://digibabaa.co",
-    "telephone": "+971-56-257-8722",
-    "email": "akbar@digibabaa.co",
+    "telephone": "+1-307-225-3509",
+    "email": "akbarhayat228@gmail.com",
     "logo": "https://digibabaa.co/favicon.png",
     "image": "https://digibabaa.co/favicon.png",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "401, Building 44, Al Murar – Deira",
-      "addressLocality": "Dubai",
-      "addressRegion": "Dubai",
-      "addressCountry": "AE"
+      "streetAddress": "30 N Gould St Ste 47327",
+      "addressLocality": "Sheridan",
+      "addressRegion": "WY",
+      "postalCode": "82801",
+      "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "25.2776",
-      "longitude": "55.3084"
+      "latitude": "44.7972",
+      "longitude": "-106.9562"
     },
     "openingHoursSpecification": [
       {
@@ -90,8 +91,8 @@ export const generateLocalBusinessSchema = () => {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": "25.2776",
-        "longitude": "55.3084"
+        "latitude": "44.7972",
+        "longitude": "-106.9562"
       },
       "geoRadius": "50000"
     },
@@ -112,13 +113,15 @@ export const generateOrganizationSchema = () => {
     "url": "https://digibabaa.co",
     "logo": "https://digibabaa.co/favicon.png",
     "description": "Leading AI Marketing agency specializing in intelligent automation, chatbots, voice agents, and data-driven marketing solutions",
-    "email": "akbar@digibabaa.co",
-    "telephone": "+971562578722",
+    "email": "akbarhayat228@gmail.com",
+    "telephone": "+13072253509",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "401, Building 44, Al Murar – Deira",
-      "addressLocality": "Dubai",
-      "addressCountry": "AE"
+      "streetAddress": "30 N Gould St Ste 47327",
+      "addressLocality": "Sheridan",
+      "addressRegion": "WY",
+      "postalCode": "82801",
+      "addressCountry": "US"
     },
     "sameAs": [
       "https://www.facebook.com/digibabaa",
@@ -127,10 +130,10 @@ export const generateOrganizationSchema = () => {
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+971562578722",
+      "telephone": "+13072253509",
       "contactType": "customer service",
-      "areaServed": "AE",
-      "availableLanguage": ["en", "ar"]
+      "areaServed": "US",
+      "availableLanguage": ["en"]
     }
   };
 };
@@ -180,7 +183,7 @@ export const generateServiceSchema = (service: {
     },
     "areaServed": {
       "@type": "Country",
-      "name": "United Arab Emirates"
+      "name": "United States"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

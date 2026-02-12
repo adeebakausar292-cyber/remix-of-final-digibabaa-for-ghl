@@ -33,7 +33,7 @@ const AiChatbot = () => {
       ]),
       generateServiceSchema({
         name: "AI Chatbot Development for Lead Generation",
-        description: "Intelligent AI chatbot solutions for customer engagement, lead qualification, and automated support across website, WhatsApp, Facebook, and Instagram in Dubai",
+        description: "Intelligent AI chatbot solutions for customer engagement, lead qualification, and automated support across website, WhatsApp, Facebook, and Instagram",
         url: "https://digibabaa.co/services/ai-chatbot",
         provider: "DigiBabaa"
       })
@@ -43,9 +43,9 @@ const AiChatbot = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="AI Chatbots for Lead Generation in Dubai | WhatsApp & Website"
-        description="Deploy intelligent AI chatbots across your website, WhatsApp, Facebook & Instagram in Dubai. Automate customer support, qualify leads, and boost conversions 24/7."
-        keywords="AI chatbot Dubai, lead generation chatbot UAE, WhatsApp automation Dubai, website chatbot, customer support automation, AI chat marketing Dubai"
+        title="AI Chatbots for Lead Generation | WhatsApp & Website"
+        description="Deploy intelligent AI chatbots across your website, WhatsApp, Facebook & Instagram. Automate customer support, qualify leads, and boost conversions 24/7."
+        keywords="AI chatbot, lead generation chatbot, WhatsApp automation, website chatbot, customer support automation, AI chat marketing"
         canonical="https://digibabaa.co/services/ai-chatbot"
         schema={combinedSchema}
       />
@@ -60,7 +60,7 @@ const AiChatbot = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            AI Chatbots for Lead Generation in Dubai
+            AI Chatbots for Lead Generation
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Transform customer interactions with intelligent automation that works 24/7 across all your favorite platforms.

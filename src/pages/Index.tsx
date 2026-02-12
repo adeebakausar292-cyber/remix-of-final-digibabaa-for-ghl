@@ -130,9 +130,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="AI Marketing & Automation in Dubai | DigiBabaa"
-        description="Transform your business with AI marketing automation in Dubai. AI chatbots, voice agents & intelligent campaigns that generate leads and drive conversions 24/7."
-        keywords="AI marketing Dubai, marketing automation UAE, AI chatbot Dubai, voice agents, lead generation UAE, WhatsApp automation Dubai"
+        title="AI Marketing & Automation | DigiBabaa"
+        description="Transform your business with AI marketing automation. AI chatbots, voice agents & intelligent campaigns that generate leads and drive conversions 24/7."
+        keywords="AI marketing, marketing automation, AI chatbot, voice agents, lead generation, WhatsApp automation"
         canonical="https://digibabaa.co/"
         schema={combinedSchema}
       />
@@ -145,7 +145,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
-            alt="AI marketing automation dashboard showing intelligent chatbot workflows and customer engagement tools for Dubai businesses" 
+            alt="AI marketing automation dashboard showing intelligent chatbot workflows and customer engagement tools" 
             className="w-full h-full object-cover opacity-20"
             width={1920}
             height={1080}
@@ -162,14 +162,14 @@ const Index = () => {
           </Badge>
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up leading-tight">
-            AI Marketing & Automation in{" "}
+            AI Marketing &{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Dubai, UAE
+              Automation
             </span>
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in leading-relaxed">
-            Transform your Dubai business with AI chatbots, voice agents, and intelligent marketing automation 
+            Transform your business with AI chatbots, voice agents, and intelligent marketing automation 
             that generate qualified leads, nurture customers, and drive conversions 24/7.
           </p>
           
@@ -231,7 +231,7 @@ const Index = () => {
                        <div className="relative mb-4 overflow-hidden rounded-lg">
                         <img 
                           src={service.image_url || images[index % images.length]} 
-                          alt={`${service.title} - AI-powered marketing solution for lead generation and customer engagement in Dubai`}
+                          alt={`${service.title} - AI-powered marketing solution for lead generation and customer engagement`}
                           className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                           width={400}
                           height={128}
